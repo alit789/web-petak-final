@@ -5,10 +5,10 @@ import React from "react";
 export default function TempatWisata() {
   return (
     <div className="mt-10">
-      <div className="overflow-x-auto">
+      <div className="overflow-hidden">
         <table className="table">
           {/* head */}
-          <thead>
+          <thead className="rv1">
             <tr>
               <th>Place Name</th>
               <th className="hidden md:table-cell">Address</th>
@@ -17,8 +17,9 @@ export default function TempatWisata() {
             </tr>
           </thead>
           <tbody>
+
             {/* row 1 */}
-            <tr>
+            <tr className="rv2">
               <td>
                 <div className="flex items-center gap-3">
                   <div>
@@ -43,7 +44,7 @@ export default function TempatWisata() {
             </tr>
 
             {/* row 2 */}
-            <tr>
+            <tr className="rv3">
               <td>
                 <div className="flex items-center gap-3">
                   <div>
@@ -67,7 +68,7 @@ export default function TempatWisata() {
             </tr>
 
             {/* row 3 */}
-            <tr>
+            <tr className="rv4">
               <td>
                 <div className="flex items-center gap-3">
                   <div>
@@ -92,7 +93,7 @@ export default function TempatWisata() {
             </tr>
 
             {/* row 4 */}
-            <tr>
+            <tr className="rv5">
               <td>
                 <div className="flex items-center gap-3">
                   <div>
@@ -117,7 +118,7 @@ export default function TempatWisata() {
             </tr>
 
             {/* row 5 */}
-            <tr>
+            <tr className="rv6">
               <td>
                 <div className="flex items-center gap-3">
                   <div>

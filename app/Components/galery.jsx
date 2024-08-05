@@ -63,7 +63,7 @@ export default function Galery() {
           <button
             key={category}
             type="button"
-            className={`text-gray-900 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 ${
+            className={`text-gray-900 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base hover:text-white font-medium px-5 py-2.5 text-center me-3 mb-3 ${
               selectedCategory === category ? "bg-blue-700 text-white" : "bg-white"
             }`}
             onClick={() => handleButtonClick(category)}
@@ -86,12 +86,12 @@ export default function Galery() {
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
-        <div id="dropdown" className="z-10 mt-3 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700">
+        <div id="dropdown" className="z-10 mt-3 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-full ">
           <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
             {Object.keys(images).map((category) => (
               <li key={category}>
                 <div
-                  className="block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  className="block cursor-pointer px-4 py-2 hover:bg-gray-100"
                   onClick={() => {
                     handleButtonClick(category);
                     document.getElementById("dropdown").classList.add("hidden");

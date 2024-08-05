@@ -95,7 +95,7 @@ export default function Kritik() {
                   onChange={handleChange}
                   id="name"
                   type="text"
-                  className="grow"
+                  className="grow px-2 overflow-hidden"
                   placeholder="Your Name"
                 />
               </label>
@@ -118,7 +118,7 @@ export default function Kritik() {
                   onChange={handleChange}
                   required
                   id="email"
-                  className="grow"
+                  className="grow px-2 overflow-hidden"
                   placeholder="Email"
                 />
               </label>

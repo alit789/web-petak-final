@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+table,th,tr,thead,tbody,td{
+  border-style: none !important;
+}
+
 /* body{
   height: 300vh;
 } */
