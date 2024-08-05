@@ -17,8 +17,6 @@ export default function TempatWisata() {
             </tr>
           </thead>
           <tbody>
-
-
             {/* row 1 */}
             <tr>
               <td>
@@ -35,7 +33,9 @@ export default function TempatWisata() {
                 </span>
               </td>
               <td>
-                <span className="badge badge-primary badge-md hidden md:block">Holy</span>
+                <span className="badge badge-primary badge-md hidden md:block">
+                  Holy
+                </span>
               </td>
               <th>
                 <button className="btn btn-ghost btn-sm">details</button>
@@ -53,12 +53,13 @@ export default function TempatWisata() {
               </td>
               <td>
                 <span className="badge hidden md:block badge-ghost badge-md">
-                  Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar,
-                  Bali.
+                  Jl. Raya Suwat, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali
                 </span>
               </td>
               <td>
-                <span className="badge badge-secondary badge-md hidden md:block">Waterfall</span>
+                <span className="badge badge-secondary badge-md hidden md:block">
+                  Waterfall
+                </span>
               </td>
               <th>
                 <button className="btn btn-ghost btn-sm">details</button>
@@ -81,7 +82,9 @@ export default function TempatWisata() {
                 </span>
               </td>
               <td>
-                <span className="badge badge-primary badge-md hidden md:block">Holy</span>
+                <span className="badge badge-primary badge-md hidden md:block">
+                  Holy
+                </span>
               </td>
               <th>
                 <button className="btn btn-ghost btn-sm">details</button>
@@ -104,7 +107,9 @@ export default function TempatWisata() {
                 </span>
               </td>
               <td>
-                <span className="badge badge-accent badge-md hidden md:block">Family</span>
+                <span className="badge badge-accent badge-md hidden md:block">
+                  Family
+                </span>
               </td>
               <th>
                 <button className="btn btn-ghost btn-sm">details</button>
@@ -127,13 +132,14 @@ export default function TempatWisata() {
                 </span>
               </td>
               <td>
-                <span className="badge badge-primary badge-md hidden md:block">Nature</span>
+                <span className="badge badge-primary badge-md hidden md:block">
+                  Nature
+                </span>
               </td>
               <th>
                 <button className="btn btn-ghost btn-sm">details</button>
               </th>
             </tr>
-
           </tbody>
         </table>
       </div>

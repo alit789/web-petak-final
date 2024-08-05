@@ -6,6 +6,7 @@ import Galery from "./Components/galery";
 import Accordion from "./Components/accordion";
 import Footer from "./Components/footer";
 import TempatWisata from "./Components/TempatWisata";
+import Kritik from "./Components/kritik";
 import { useTheme } from "./ThemeContext";
 
 export default function Home() {
@@ -69,20 +70,23 @@ export default function Home() {
             <h1 className="text-3xl font-bold">Tourist Attraction</h1>
           </div>
           <div className="flex justify-center">
-              <p className="mt-3 hidden md:block lg:w-2/3 text-center">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Consectetur, dolore illum ratione est soluta eos sapiente ut
-                necessitatibus, molestias dolor ea voluptatum consequuntur rerum
-                iure atque quia nisi in ab!
-              </p>
-            </div>
-          <TempatWisata/>
+            <p className="mt-3 hidden md:block lg:w-2/3 text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consectetur, dolore illum ratione est soluta eos sapiente ut
+              necessitatibus, molestias dolor ea voluptatum consequuntur rerum
+              iure atque quia nisi in ab!
+            </p>
+            <p className="mt-3 md:hidden text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <TempatWisata />
         </div>
       </section>
 
       <section className="galery py-10 md:py-20">
         <div className="container mx-auto px-5">
-          <div className="text-center mb-5">
+          <div className="text-center mb-3 md:mb-5">
             <h1 className=" text-3xl font-bold">Trip Inspiration</h1>
             <div className="flex justify-center">
               <p className="mt-3 lg:w-2/3 hidden md:block">
@@ -90,6 +94,9 @@ export default function Home() {
                 Consectetur, dolore illum ratione est soluta eos sapiente ut
                 necessitatibus, molestias dolor ea voluptatum consequuntur rerum
                 iure atque quia nisi in ab!
+              </p>
+              <p className="mt-3 md:hidden">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </p>
             </div>
           </div>
@@ -111,6 +118,9 @@ export default function Home() {
               necessitatibus, molestias dolor ea voluptatum consequuntur rerum
               iure atque quia nisi in ab!
             </p>
+            <p className="mt-3 md:hidden text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
           </div>
           <div className="mt-5">
             <Accordion />
@@ -118,7 +128,11 @@ export default function Home() {
         </div>
       </section>
 
-      
+      <section className="py-10 md:py-20">
+        <div className="container mx-auto px-5">
+          <Kritik/>
+        </div>
+      </section>
 
       <section>
         <div>

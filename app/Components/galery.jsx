@@ -58,7 +58,6 @@ export default function Galery() {
 
   return (
     <div>
-      {/* Buttons for larger screens */}
       <div className="hidden md:flex items-center justify-center py-4 md:py-8 flex-wrap">
         {Object.keys(images).map((category) => (
           <button
@@ -74,12 +73,11 @@ export default function Galery() {
         ))}
       </div>
 
-      {/* Dropdown for mobile devices */}
       <div className="md:hidden py-4 md:py-8">
         <button
           id="dropdownDefaultButton"
           data-dropdown-toggle="dropdown"
-          className="text-white flex justify-between w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="btn btn-primary w-full"
           type="button"
           onClick={() => document.getElementById("dropdown").classList.toggle("hidden")}
         >
@@ -122,7 +120,7 @@ export default function Galery() {
         <div className="flex justify-center py-4 mt-5">
           <button
             type="button"
-            className="btn btn-secondary bg-blue-700 text-white py-2 px-4 rounded-full hover:bg-blue-800 transition duration-300"
+            className="btn btn-secondary"
             onClick={handleSeeMore}
           >
             Show More...
