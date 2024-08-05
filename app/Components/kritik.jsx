@@ -68,7 +68,7 @@ export default function Kritik() {
           />
         )}
       </div>
-      <div className="p-6 shadow-sm border w-full h-auto rounded-xl">
+      <div className="p-6 shadow-sm border border-gray-500 w-full h-auto rounded-xl">
         <form onSubmit={handleSubmit}>
           <div>
             <h1 className="text-2xl">Send Me a Question..</h1>
