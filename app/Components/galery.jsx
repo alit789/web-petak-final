@@ -34,9 +34,9 @@ const images = {
     FotoDuaBelas,
     FotoDuaBelas,
   ],
-  GunungMertha: [FotoSepuluh, FotoSebelas, FotoDuaBelas],
-  ToyaSlaka: [FotoEnam, FotoTujuh, FotoDelapan, FotoSembilan],
-  PesiramanDalem: [FotoSatu, FotoDua, FotoTiga, FotoEmpat],
+  "Gunung Mertha": [FotoSepuluh, FotoSebelas, FotoDuaBelas],
+  "Toya Slaka": [FotoEnam, FotoTujuh, FotoDelapan, FotoSembilan],
+  "Pesiraman Dalem": [FotoSatu, FotoDua, FotoTiga, FotoEmpat],
 };
 
 export default function Galery() {
@@ -58,44 +58,55 @@ export default function Galery() {
 
   return (
     <div>
-      <div className="flex items-center justify-center py-4 md:py-8 flex-wrap">
-        <button
-          type="button"
-          className={`text-gray-900  -gray-200 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 ${
-            selectedCategory === "All categories" ? "bg-blue-700 text-white" : "bg-white"
-          }`}
-          onClick={() => handleButtonClick("All categories")}
-        >
-          All categories
-        </button>
-        <button
-          type="button"
-          className={`text-gray-900  -gray-200 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 ${
-            selectedCategory === "GunungMertha" ? "bg-blue-700 text-white" : "bg-white"
-          }`}
-          onClick={() => handleButtonClick("GunungMertha")}
-        >
-          Gunung Mertha
-        </button>
-        <button
-          type="button"
-          className={`text-gray-900  -gray-200 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 ${
-            selectedCategory === "ToyaSlaka" ? "bg-blue-700 text-white" : "bg-white"
-          }`}
-          onClick={() => handleButtonClick("ToyaSlaka")}
-        >
-          Toya Slaka
-        </button>
-        <button
-          type="button"
-          className={`text-gray-900  -gray-200 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 ${
-            selectedCategory === "PesiramanDalem" ? "bg-blue-700 text-white" : "bg-white"
-          }`}
-          onClick={() => handleButtonClick("PesiramanDalem")}
-        >
-          Pesiraman Dalem
-        </button>
+      {/* Buttons for larger screens */}
+      <div className="hidden md:flex items-center justify-center py-4 md:py-8 flex-wrap">
+        {Object.keys(images).map((category) => (
+          <button
+            key={category}
+            type="button"
+            className={`text-gray-900 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 ${
+              selectedCategory === category ? "bg-blue-700 text-white" : "bg-white"
+            }`}
+            onClick={() => handleButtonClick(category)}
+          >
+            {category}
+          </button>
+        ))}
       </div>
+
+      {/* Dropdown for mobile devices */}
+      <div className="md:hidden py-4 md:py-8">
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdown"
+          className="text-white flex justify-between w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          type="button"
+          onClick={() => document.getElementById("dropdown").classList.toggle("hidden")}
+        >
+          {selectedCategory}
+          <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
+          </svg>
+        </button>
+        <div id="dropdown" className="z-10 mt-3 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700">
+          <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            {Object.keys(images).map((category) => (
+              <li key={category}>
+                <div
+                  className="block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  onClick={() => {
+                    handleButtonClick(category);
+                    document.getElementById("dropdown").classList.add("hidden");
+                  }}
+                >
+                  {category}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {imagesToShow.map((src, index) => (
           <div key={index}>
@@ -111,7 +122,7 @@ export default function Galery() {
         <div className="flex justify-center py-4 mt-5">
           <button
             type="button"
-            className="btn btn-secondary"
+            className="btn btn-secondary bg-blue-700 text-white py-2 px-4 rounded-full hover:bg-blue-800 transition duration-300"
             onClick={handleSeeMore}
           >
             Show More...
