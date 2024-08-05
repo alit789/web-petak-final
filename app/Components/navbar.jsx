@@ -1,10 +1,11 @@
-"use client";
-
 import React from "react";
+import { useTheme } from "../ThemeContext"; // Adjust the import path as needed
 
-export default function navbar() {
+export default function Navbar() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
-    <nav className="fixed bg-gray-900 md:bg-transparent z-50 w-full top-0">
+    <nav className="fixed md:bg-transparent backdrop-blur-lg z-50 w-full top-0">
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -14,7 +15,7 @@ export default function navbar() {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="white"
+                stroke="#000000"
               >
                 <path
                   strokeLinecap="round"
@@ -47,16 +48,16 @@ export default function navbar() {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl  text-white">PetakMlali</a>
+          <a className="btn btn-ghost text-xl ">PetakMlali</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li className=" text-white">
+            <li className="">
               <a>Home</a>
             </li>
             <li>
               <details>
-                <summary className=" text-white">Our Destination</summary>
+                <summary className="">Our Destination</summary>
                 <ul className="p-2">
                   <li>
                     <a>Submenu 1</a>
@@ -67,13 +68,48 @@ export default function navbar() {
                 </ul>
               </details>
             </li>
-            <li className=" text-white">
+            <li className="">
               <a>About Us</a>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-primary text-white">Lets Explore</a>
+          <label className="flex cursor-pointer gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            </svg>
+            <input
+              type="checkbox"
+              className="toggle theme-controller"
+              id="theme-toggle"
+              checked={theme === "night"}
+              onChange={toggleTheme}
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </label>
         </div>
       </div>
     </nav>
