@@ -4,39 +4,40 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 // Upload photos
-import FotoSatu from "@/public/foto1.jpg";
-import FotoDua from "@/public/DSC03260.JPG";
-import FotoTiga from "@/public/DSC03280.JPG";
-import FotoEmpat from "@/public/DSC03285.JPG";
-import FotoLima from "@/public/XHMN2081.JPG";
-import FotoEnam from "@/public/XHMN2082.JPG";
-import FotoTujuh from "@/public/XHMN2096.JPG";
-import FotoDelapan from "@/public/XHMN2121.JPG";
-import FotoSembilan from "@/public/XHMN2137.JPG";
-import FotoSepuluh from "@/public/XHMN2276.JPG";
-import FotoSebelas from "@/public/XHMN2322.JPG";
-import FotoDuaBelas from "@/public/XHMN2331.JPG";
+
+// Gunung Mertha
+import GunungMertha1 from "@/public/XHMN3814.jpg";
+import GunungMertha2 from "@/public/XHMN3833.jpg";
+import GunungMertha3 from "@/public/XHMN3840.jpg";
+import GunungMertha4 from "@/public/XHMN3863.jpg";
+import GunungMertha5 from "@/public/XHMN3878.jpg";
+import GunungMertha6 from "@/public/XHMN3928.jpg";
+import GunungMertha7 from "@/public/XHMN3947.jpg";
+
+
+
+// ricefield
+import RiceField from "@/public/XHMN3746.jpg"
+import RiceField2 from "@/public/XHMN3738.jpg"
+import RiceField3 from "@/public/XHMN3756.jpg"
+
 
 const images = {
   "All categories": [
-    FotoSatu,
-    FotoDua,
-    FotoTiga,
-    FotoEmpat,
-    FotoLima,
-    FotoEnam,
-    FotoTujuh,
-    FotoDelapan,
-    FotoSembilan,
-    FotoSepuluh,
-    FotoSebelas,
-    FotoDuaBelas,
-    FotoDuaBelas,
-    FotoDuaBelas,
+    GunungMertha1,
+    GunungMertha2,
+    GunungMertha3,
+    GunungMertha4,
+    GunungMertha5,
+    GunungMertha6,
+    GunungMertha7,
+    RiceField,
+    RiceField2,
+    RiceField3,
   ],
-  "Gunung Mertha": [FotoSepuluh, FotoSebelas, FotoDuaBelas],
-  "Toya Slaka": [FotoEnam, FotoTujuh, FotoDelapan, FotoSembilan],
-  "Pesiraman Dalem": [FotoSatu, FotoDua, FotoTiga, FotoEmpat],
+  "Gunung Mertha": [GunungMertha1, GunungMertha2, GunungMertha3 , GunungMertha4 ,GunungMertha5, GunungMertha6 ,GunungMertha7],
+  "Toya Slaka": [RiceField,RiceField2,RiceField3],
+  "Pesiraman Dalem": [],
 };
 
 export default function Galery() {

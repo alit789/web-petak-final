@@ -18,7 +18,7 @@ table,th,tr,thead,tbody,td{
 
 /* Customize the scrollbar for Firefox */
 * {
-  scrollbar-width:thin; /* Width of the scrollbar */
+  scrollbar-width:none; /* Width of the scrollbar */
   scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar thumb and track */
 }
 
@@ -30,7 +30,17 @@ body {
 .Hero{
   background-image: url(./Img/bgHero.png); 
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width:476px) {
+  .Hero{
+    background-image: url(./Img/bgHeroPhone.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 #imgDest{

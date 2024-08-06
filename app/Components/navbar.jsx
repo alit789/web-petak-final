@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTheme } from "../ThemeContext"; // Adjust the import path as needed
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="fixed md:bg-transparent backdrop-blur-lg z-50 w-full top-0">
+    <nav className={`fixed z-50 w-full transition top-0 ${isScrolled ? "bg-gray-900" : "bg-transparent"}`}>
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -15,7 +32,7 @@ export default function Navbar() {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="#000000"
+                stroke="#fff"
               >
                 <path
                   strokeLinecap="round"
@@ -48,11 +65,11 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl ">PetakMlali</a>
+          <a className="btn btn-ghost text-xl text-white">PetakMlali</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li className="">
+          <ul className="menu text-white menu-horizontal px-1">
+            <li>
               <a>Home</a>
             </li>
             <li>
@@ -68,7 +85,7 @@ export default function Navbar() {
                 </ul>
               </details>
             </li>
-            <li className="">
+            <li>
               <a>About Us</a>
             </li>
           </ul>
@@ -81,7 +98,7 @@ export default function Navbar() {
               height="20"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="currentColor"
+              stroke="#fff"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -102,7 +119,7 @@ export default function Navbar() {
               height="20"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="currentColor"
+              stroke="#fff"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
