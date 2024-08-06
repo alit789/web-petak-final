@@ -63,8 +63,8 @@ export default function Galery() {
           <button
             key={category}
             type="button"
-            className={`text-gray-900 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base hover:text-white font-medium px-5 py-2.5 text-center me-3 mb-3 ${
-              selectedCategory === category ? "bg-blue-700 text-white" : "bg-white"
+            className={`text-gray-900 hover:bg-primary focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base hover:text-white font-medium px-5 py-2.5 text-center me-3 mb-3 ${
+              selectedCategory === category ? " bg-primary text-white" : "bg-white"
             }`}
             onClick={() => handleButtonClick(category)}
           >
@@ -120,7 +120,7 @@ export default function Galery() {
         <div className="flex justify-center py-4 mt-5">
           <button
             type="button"
-            className="btn btn-secondary"
+            className="btn btn-primary"
             onClick={handleSeeMore}
           >
             Show More...

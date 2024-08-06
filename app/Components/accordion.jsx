@@ -6,7 +6,7 @@ export default function accordion() {
     <div>
       <div className="collapse collapse-plus border border-gray-500 mt-3">
         <input type="radio" name="my-accordion-3" defaultChecked />
-        <div className="collapse-title text-lg text-blue-400 font-medium">
+        <div className="collapse-title text-lg text-primary font-medium">
           1. Apa saja objek wisata yang ada di desa petak?
         </div>
         <div className="collapse-content">
@@ -23,7 +23,7 @@ export default function accordion() {
       </div>
       <div className="collapse collapse-plus border border-gray-500 mt-3">
         <input type="radio" name="my-accordion-3" />
-        <div className="collapse-title text-lg text-blue-400 font-medium">
+        <div className="collapse-title text-lg text-primary font-medium">
           2. Apakah ada hotel atau tempat untuk menginap di desa petak?
         </div>
         <div className="collapse-content">
@@ -40,7 +40,7 @@ export default function accordion() {
       </div>
       <div className="collapse collapse-plus border border-gray-500 mt-3">
         <input type="radio" name="my-accordion-3" />
-        <div className="collapse-title text-lg text-blue-400 font-medium">
+        <div className="collapse-title text-lg text-primary font-medium">
           3. Berapa Budget yang dibutuhkan untuk liburan di desa petak?
         </div>
         <div className="collapse-content">

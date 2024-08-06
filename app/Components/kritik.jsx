@@ -71,11 +71,12 @@ export default function Kritik() {
       <div className="p-6 shadow-sm border border-gray-500 w-full h-auto rounded-xl">
         <form onSubmit={handleSubmit}>
           <div>
-            <h1 className="text-2xl">Send Me a Question..</h1>
+            <h1 className="text-2xl text-primary font-bold">Send Me a Question..</h1>
             <p className="text-sm my-2 w-full md:w-2/3">
-              Do you want to get notified when a new component is added to
-              Flowbite? Sign up for our newsletter and you'll be among the first
-              to find out about new features, components, versions, and tools.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur dignissimos quaerat soluta ratione esse in totam,
+              perferendis eos modi voluptatum quas debitis nam illum velit
+              repellat magni aliquam doloribus cupiditate?
             </p>
 
             {/* nama */}
