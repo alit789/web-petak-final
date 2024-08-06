@@ -7,6 +7,7 @@ import Accordion from "./Components/accordion";
 import Footer from "./Components/footer";
 import TempatWisata from "./Components/TempatWisata";
 import Kritik from "./Components/kritik";
+
 import { useEffect } from "react";
 import { useTheme } from "./ThemeContext";
 
@@ -116,6 +117,7 @@ export default function Home() {
         </div>
       </section>
       {/* end Hero */}
+
 
       <section className="tempatWisata py-10 md:py-20">
         <div className="container mx-auto px-5">

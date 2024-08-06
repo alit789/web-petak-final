@@ -8,33 +8,118 @@ export default function TempatWisata() {
   const [currentPage, setCurrentPage] = useState(1);
   const [filter, setFilter] = useState("All");
 
+  // Penambahan data objek wisata dll
+
   const data = [
     {
       name: "Pasiraman Gunung Mertha",
-      address: "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
-      type: "Holy",
-      gmaps: 'https://g.co/kgs/HkYc2en',
+      address:
+        "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
+      type: "Objek Wisata",
+      gmaps: "https://g.co/kgs/HkYc2en",
     },
     {
       name: "Toya Slaka",
       address: "Jl. Raya Suwat, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
-      type: "Waterfall",
+      type: "Penginapan",
     },
     {
       name: "Pasiraman Dalem",
-      address: "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
-      type: "Holy",
+      address:
+        "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
+      type: "Kuliner",
     },
     {
       name: "Toya Bulan",
-      address: "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
-      type: "Family",
+      address:
+        "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
+      type: "Merchandise",
     },
-    // Add more rows as needed
+    {
+      name: "Toya Slaka",
+      address: "Jl. Raya Suwat, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
+      type: "Penginapan",
+    },
+    {
+      name: "Toya Slaka",
+      address: "Jl. Raya Suwat, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
+      type: "Penginapan",
+    },
+    {
+      name: "Toya Slaka",
+      address: "Jl. Raya Suwat, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
+      type: "Penginapan",
+    },
+    {
+      name: "Pasiraman Dalem",
+      address:
+        "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
+      type: "Kuliner",
+    },
+    {
+      name: "Pasiraman Dalem",
+      address:
+        "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
+      type: "Kuliner",
+    },
+
+    {
+      name: "Pasiraman Gunung Mertha",
+      address:
+        "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
+      type: "Objek Wisata",
+      gmaps: "https://g.co/kgs/HkYc2en",
+    },
+    {
+      name: "Toya Slaka",
+      address: "Jl. Raya Suwat, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
+      type: "Penginapan",
+    },
+    {
+      name: "Pasiraman Dalem",
+      address:
+        "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
+      type: "Kuliner",
+    },
+    {
+      name: "Toya Bulan",
+      address:
+        "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
+      type: "Merchandise",
+    },
+
+    {
+      name: "Pasiraman Gunung Mertha",
+      address:
+        "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
+      type: "Objek Wisata",
+      gmaps: "https://g.co/kgs/HkYc2en",
+    },
+    {
+      name: "Toya Slaka",
+      address: "Jl. Raya Suwat, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
+      type: "Penginapan",
+    },
+    {
+      name: "Pasiraman Dalem",
+      address:
+        "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
+      type: "Kuliner",
+    },
+    {
+      name: "Toya Bulan",
+      address:
+        "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
+      type: "Merchandise",
+    },
+    // tambah data
   ];
 
+  // End Penambahan Data Objek Wisata
+
   // Filter data based on the selected type
-  const filteredData = filter === "All" ? data : data.filter(item => item.type === filter);
+  const filteredData =
+    filter === "All" ? data : data.filter((item) => item.type === filter);
 
   const totalPages = Math.ceil(filteredData.length / rowsPerPage);
 
@@ -45,7 +130,7 @@ export default function TempatWisata() {
 
   const getPageNumbers = () => {
     const pages = [];
-    if (totalPages <= 1) return pages; // No pagination if only one page
+    if (totalPages <= 1) return pages;
 
     pages.push(1);
     if (currentPage > 3) pages.push("...");
@@ -62,7 +147,9 @@ export default function TempatWisata() {
     <div className="mt-10">
       {/* Filter dropdown */}
       <div className="mb-4 text-end">
-        <label htmlFor="typeFilter" className="mr-2">Filter by Type :</label>
+        <label htmlFor="typeFilter" className="mr-2">
+          Filter by Type :
+        </label>
         <select
           id="typeFilter"
           className="select select-bordered"
@@ -70,10 +157,10 @@ export default function TempatWisata() {
           onChange={(e) => setFilter(e.target.value)}
         >
           <option value="All">All</option>
-          <option value="Holy">Holy</option>
-          <option value="Waterfall">Waterfall</option>
-          <option value="Family">Family</option>
-          <option value="Nature">Nature</option>
+          <option value="Objek Wisata">Objek Wisata</option>
+          <option value="Penginapan">Penginapan</option>
+          <option value="Kuliner">Kuliner</option>
+          <option value="Merchandise">Merchandise</option>
         </select>
       </div>
 
@@ -106,13 +193,13 @@ export default function TempatWisata() {
                 <td>
                   <span
                     className={`badge badge-${
-                      row.type === "Holy"
+                      row.type === "Objek Wisata"
                         ? "primary"
-                        : row.type === "Waterfall"
+                        : row.type === "Penginapan"
                         ? "secondary"
-                        : row.type === "Family"
+                        : row.type === "Kuliner"
                         ? "accent"
-                        : row.type === "Nature"
+                        : row.type === "Merchandise"
                         ? "success"
                         : "primary"
                     }  badge-md hidden md:block`}

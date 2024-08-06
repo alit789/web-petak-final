@@ -36,7 +36,7 @@ export default function Navbar() {
                 <a>Our Destination</a>
                 <ul className="p-2">
                   <li>
-                    <a>Submenu 1</a>
+                    <a href="/GunungMertha">Gunung Mertha</a>
                   </li>
                   <li>
                     <a>Submenu 2</a>
@@ -57,10 +57,10 @@ export default function Navbar() {
             </li>
             <li>
               <details>
-                <summary className="">Our Destination</summary>
+                <summary>Our Destination</summary>
                 <ul className="p-2">
                   <li>
-                    <a>Submenu 1</a>
+                    <a href="/GunungMertha">Gunung Mertha</a>
                   </li>
                   <li>
                     <a>Submenu 2</a>
