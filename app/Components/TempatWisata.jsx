@@ -167,7 +167,7 @@ export default function TempatWisata() {
       <div className="overflow-hidden">
         <table className="table">
           {/* head */}
-          <thead>
+          <thead className="rv1">
             <tr>
               <th>Place Name</th>
               <th className="hidden md:table-cell">Address</th>
