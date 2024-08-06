@@ -87,7 +87,7 @@ export default function Galery() {
           </svg>
         </button>
         <div id="dropdown" className="z-10 mt-3 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-full ">
-          <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+          <ul className="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
             {Object.keys(images).map((category) => (
               <li key={category}>
                 <div
