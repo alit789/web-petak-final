@@ -2,17 +2,17 @@
 import React, { useEffect } from "react";
 
 export default function Notif({ message, type, visible, onClose }) {
-  // useEffect(() => {
-  //   if (visible) {
-  //     const timer = setTimeout(() => {
-  //       onClose();
-  //     }, 10000);
+  useEffect(() => {
+    if (visible) {
+      const timer = setTimeout(() => {
+        onClose();
+      }, 10000);
 
-  //     return () => clearTimeout(timer);
-  //   }
-  // }, [visible, onClose]);
+      return () => clearTimeout(timer);
+    }
+  }, [visible, onClose]);
 
-  // if (!visible) return null;
+  if (!visible) return null;
 
   return (
     <div>
