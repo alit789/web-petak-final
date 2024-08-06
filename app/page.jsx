@@ -70,16 +70,17 @@ export default function Home() {
         <div className="container px-2 mx-auto min-h-screen flex justify-center items-center">
           {/* hero Tagline */}
           <div className="desc text-center">
-            <h1 className="rv1 text-4xl lg:text-6xl text-white font-semibold lg:font-bold">
-              Travel, enjoy and live a
-              new and full life
-            </h1>
-            <div className="lg:flex justify-center items-center my-3">
-              <p className="rv2 block lg:hidden text-white">
+            <div className="rv1">
+              <h1 className=" text-4xl lg:text-6xl text-white font-semibold lg:font-bold">
+                Travel, enjoy and live a new and full life
+              </h1>
+            </div>
+            <div className="lg:flex rv2 justify-center items-center my-3">
+              <p className=" block lg:hidden text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 hic ea eaque? Quod, incidunt qui quis facilis.
               </p>
-              <p className="rv2 w-2/3 hidden lg:block text-white">
+              <p className=" w-2/3 hidden lg:block text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
                 minima blanditiis quod vero architecto ex iure hic ratione ullam{" "}
                 rerum incidunt ea accusamus harum laborum, doloremque minus
@@ -118,11 +119,13 @@ export default function Home() {
 
       <section className="tempatWisata py-10 md:py-20">
         <div className="container mx-auto px-5">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold rv1 text-primary">Tourist Attraction</h1>
+          <div className="text-center rv1">
+            <h1 className="text-3xl font-bold text-primary">
+              Tourist Attraction
+            </h1>
           </div>
-          <div className="flex justify-center">
-            <p className="mt-3 rv2 hidden md:block lg:w-2/3 text-center">
+          <div className="flex justify-center rv2">
+            <p className="mt-3 hidden md:block lg:w-2/3 text-center">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Consectetur, dolore illum ratione est soluta eos sapiente ut
               necessitatibus, molestias dolor ea voluptatum consequuntur rerum
@@ -139,15 +142,19 @@ export default function Home() {
       <section className="galery py-10 md:py-20">
         <div className="container mx-auto px-5">
           <div className="text-center mb-3 md:mb-5">
-            <h1 className="text-3xl font-bold rv1 text-primary">Trip Inspiration</h1>
-            <div className="flex justify-center">
-              <p className="mt-3 rv2 lg:w-2/3 hidden md:block">
+            <div className="rv1">
+              <h1 className="text-3xl font-bold text-primary">
+                Trip Inspiration
+              </h1>
+            </div>
+            <div className="flex rv2 justify-center">
+              <p className="mt-3 lg:w-2/3 hidden md:block">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Consectetur, dolore illum ratione est soluta eos sapiente ut
                 necessitatibus, molestias dolor ea voluptatum consequuntur rerum
                 iure atque quia nisi in ab!
               </p>
-              <p className="mt-3 rv2 md:hidden">
+              <p className="mt-3 md:hidden">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </p>
             </div>
@@ -160,19 +167,19 @@ export default function Home() {
 
       <section className="py-10 md:py-20">
         <div className="container mx-auto px-5">
-          <div>
-            <h1 className="text-3xl rv1 text-center font-bold text-primary">
+          <div className="rv1">
+            <h1 className="text-3xl text-center font-bold text-primary">
               Frequently Asked Question
             </h1>
           </div>
-          <div className="flex justify-center">
-            <p className="mt-3 rv2 hidden md:block text-center lg:w-2/3">
+          <div className="flex rv2 justify-center">
+            <p className="mt-3 hidden md:block text-center lg:w-2/3">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Consectetur, dolore illum ratione est soluta eos sapiente ut
               necessitatibus, molestias dolor ea voluptatum consequuntur rerum
               iure atque quia nisi in ab!
             </p>
-            <p className="mt-3 rv2 md:hidden text-center">
+            <p className="mt-3 md:hidden text-center">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
           </div>
