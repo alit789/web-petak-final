@@ -63,7 +63,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main data-theme={theme}>
+    <main className="w-full overflow-hidden" data-theme={theme}>
       <Navbar />
       {/* Hero */}
       <section className="Hero">
