@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import Notif from "./notif"; // Adjust the import path according to your project structure
+import Notif from "./notif";
 
 export default function Kritik() {
   const [formData, setFormData] = useState({
@@ -58,7 +58,7 @@ export default function Kritik() {
 
   return (
     <div>
-      <div className="fixed bottom-6 left-6">
+      <div id="notif">
         {notif.visible && (
           <Notif
             message={notif.message}
