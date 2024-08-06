@@ -46,7 +46,6 @@ export default function Galery() {
   const handleButtonClick = (category) => {
     setSelectedCategory(category);
     setVisibleCount(12);
-    console.log(`Selected category: ${category}`);
   };
 
   const filteredImages = images[selectedCategory] || [];
