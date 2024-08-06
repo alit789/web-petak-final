@@ -7,62 +7,59 @@ import Accordion from "./Components/accordion";
 import Footer from "./Components/footer";
 import TempatWisata from "./Components/TempatWisata";
 import Kritik from "./Components/kritik";
-import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
 import { useTheme } from "./ThemeContext";
 
 export default function Home() {
   const { theme } = useTheme();
 
-  // reveal animation
-
   useEffect(() => {
-    ScrollReveal().reveal(".rv1", {
-      origin: "bottom",
-      distance: "20px",
-      duration: 2000,
-      delay: 100,
-      reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
-    });
-    ScrollReveal().reveal(".rv2", {
-      origin: "bottom",
-      distance: "20px",
-      duration: 2000,
-      delay: 300,
-      reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
-    });
+    if (typeof window !== "undefined") {
+      const ScrollReveal = require("scrollreveal").default;
 
-    ScrollReveal().reveal(".rv3", {
-      origin: "bottom",
-      distance: "20px",
-      duration: 3000,
-      delay: 500,
-      reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
-    });
-
-    ScrollReveal().reveal(".rv4", {
-      origin: "bottom",
-      distance: "20px",
-      duration: 3000,
-      delay: 700,
-      reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
-    });
-
-    ScrollReveal().reveal(".rv5", {
-      origin: "bottom",
-      distance: "20px",
-      duration: 3000,
-      delay: 900,
-      reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
-    });
-
-    ScrollReveal().reveal(".rv6", {
-      origin: "bottom",
-      distance: "20px",
-      duration: 3000,
-      delay: 1100,
-      reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
-    });
+      ScrollReveal().reveal(".rv1", {
+        origin: "bottom",
+        distance: "20px",
+        duration: 2000,
+        delay: 100,
+        reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
+      });
+      ScrollReveal().reveal(".rv2", {
+        origin: "bottom",
+        distance: "20px",
+        duration: 2000,
+        delay: 300,
+        reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
+      });
+      ScrollReveal().reveal(".rv3", {
+        origin: "bottom",
+        distance: "20px",
+        duration: 3000,
+        delay: 500,
+        reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
+      });
+      ScrollReveal().reveal(".rv4", {
+        origin: "bottom",
+        distance: "20px",
+        duration: 3000,
+        delay: 700,
+        reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
+      });
+      ScrollReveal().reveal(".rv5", {
+        origin: "bottom",
+        distance: "20px",
+        duration: 3000,
+        delay: 900,
+        reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
+      });
+      ScrollReveal().reveal(".rv6", {
+        origin: "bottom",
+        distance: "20px",
+        duration: 3000,
+        delay: 1100,
+        reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
+      });
+    }
   }, []);
 
   return (
@@ -73,12 +70,12 @@ export default function Home() {
         <div className="container px-2 mx-auto min-h-screen flex justify-center items-center">
           {/* hero Tagline */}
           <div className="desc text-center">
-            <h1 className="rv1  text-4xl lg:text-6xl text-white font-semibold lg:font-bold">
-              Travel, enjoy and <span className=" text-blue-400">live </span>a
+            <h1 className="rv1 text-4xl lg:text-6xl text-white font-semibold lg:font-bold">
+              Travel, enjoy and <span className="text-blue-400">live </span>a
               new and full life
             </h1>
             <div className="lg:flex justify-center items-center my-3">
-              <p className="rv2  block lg:hidden text-white">
+              <p className="rv2 block lg:hidden text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 hic ea eaque? Quod, incidunt qui quis facilis.
               </p>
@@ -92,7 +89,7 @@ export default function Home() {
               </p>
             </div>
             <div className="rv3">
-              <button className="btn btn-secondary mt-3 ">
+              <button className="btn btn-secondary mt-3">
                 Lets Explore{" "}
                 <span style={{ marginTop: "2px" }}>
                   <svg
@@ -142,7 +139,7 @@ export default function Home() {
       <section className="galery py-10 md:py-20">
         <div className="container mx-auto px-5">
           <div className="text-center mb-3 md:mb-5">
-            <h1 className=" text-3xl font-bold rv1">Trip Inspiration</h1>
+            <h1 className="text-3xl font-bold rv1">Trip Inspiration</h1>
             <div className="flex justify-center">
               <p className="mt-3 rv2 lg:w-2/3 hidden md:block">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
