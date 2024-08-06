@@ -192,16 +192,16 @@ export default function TempatWisata() {
                 </td>
                 <td>
                   <span
-                    className={`badge badge-${
+                    className={`badge ${
                       row.type === "Objek Wisata"
-                        ? "primary"
+                        ? "badge-primary"
                         : row.type === "Penginapan"
-                        ? "secondary"
+                        ? "badge-secondary"
                         : row.type === "Kuliner"
-                        ? "accent"
+                        ? "badge-accent"
                         : row.type === "Merchandise"
-                        ? "success"
-                        : "primary"
+                        ? "badge-success"
+                        : "badge-warning"
                     }  badge-md hidden md:block`}
                   >
                     {row.type}
