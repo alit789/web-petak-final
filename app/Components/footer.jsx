@@ -50,7 +50,7 @@ export default function footer() {
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All right reserved by
-            PetakMlali Team{" "}
+            KKN PPM UNUD XXIX{" "}
           </p>
         </aside>
       </footer>
