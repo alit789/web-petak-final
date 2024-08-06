@@ -25,41 +25,6 @@ export default function Home() {
         delay: 100,
         reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
       });
-      ScrollReveal().reveal(".rv2", {
-        origin: "bottom",
-        distance: "20px",
-        duration: 2000,
-        delay: 300,
-        reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
-      });
-      ScrollReveal().reveal(".rv3", {
-        origin: "bottom",
-        distance: "20px",
-        duration: 3000,
-        delay: 500,
-        reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
-      });
-      ScrollReveal().reveal(".rv4", {
-        origin: "bottom",
-        distance: "20px",
-        duration: 3000,
-        delay: 700,
-        reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
-      });
-      ScrollReveal().reveal(".rv5", {
-        origin: "bottom",
-        distance: "20px",
-        duration: 3000,
-        delay: 900,
-        reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
-      });
-      ScrollReveal().reveal(".rv6", {
-        origin: "bottom",
-        distance: "20px",
-        duration: 3000,
-        delay: 1100,
-        reset: true, // mengatur apakah animasi harus diulang setiap kali elemen masuk viewport
-      });
     }
   }, []);
 
@@ -68,7 +33,7 @@ export default function Home() {
       <Navbar />
       {/* Hero */}
       <section className="Hero">
-        <div className="container px-2 mx-auto min-h-screen flex justify-center items-center">
+        <div className="container px-5 mx-auto min-h-screen flex justify-center items-center">
           {/* hero Tagline */}
           <div className="desc text-center">
             <div className="rv1">
@@ -76,7 +41,7 @@ export default function Home() {
                 Travel, enjoy and live a new and full life
               </h1>
             </div>
-            <div className="lg:flex rv2 justify-center items-center my-3">
+            <div className="lg:flex rv1 justify-center items-center my-3">
               <p className=" block lg:hidden text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 hic ea eaque? Quod, incidunt qui quis facilis.
@@ -90,7 +55,7 @@ export default function Home() {
                 neque temporibus fugiat est?
               </p>
             </div>
-            <div className="rv3">
+            <div className="rv1">
               <button className="btn btn-primary mt-3">
                 Lets Explore{" "}
                 <span style={{ marginTop: "2px" }}>
@@ -118,7 +83,6 @@ export default function Home() {
       </section>
       {/* end Hero */}
 
-
       <section className="tempatWisata py-10 md:py-20">
         <div className="container mx-auto px-5">
           <div className="text-center rv1">
@@ -126,14 +90,14 @@ export default function Home() {
               Tourist Attraction
             </h1>
           </div>
-          <div className="flex justify-center rv2">
+          <div className="flex justify-center rv1">
             <p className="mt-3 hidden md:block lg:w-2/3 text-center">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Consectetur, dolore illum ratione est soluta eos sapiente ut
               necessitatibus, molestias dolor ea voluptatum consequuntur rerum
               iure atque quia nisi in ab!
             </p>
-            <p className="mt-3 rv2 md:hidden text-center">
+            <p className="mt-3 rv1 md:hidden text-center">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
           </div>
@@ -149,7 +113,7 @@ export default function Home() {
                 Trip Inspiration
               </h1>
             </div>
-            <div className="flex rv2 justify-center">
+            <div className="flex rv1 justify-center">
               <p className="mt-3 lg:w-2/3 hidden md:block">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Consectetur, dolore illum ratione est soluta eos sapiente ut
@@ -161,7 +125,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="rv3">
+          <div className="rv1">
             <Galery />
           </div>
         </div>
@@ -174,7 +138,7 @@ export default function Home() {
               Frequently Asked Question
             </h1>
           </div>
-          <div className="flex rv2 justify-center">
+          <div className="flex rv1 justify-center">
             <p className="mt-3 hidden md:block text-center lg:w-2/3">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Consectetur, dolore illum ratione est soluta eos sapiente ut
@@ -185,7 +149,7 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
           </div>
-          <div className="mt-5 rv3">
+          <div className="mt-5 rv1">
             <Accordion />
           </div>
         </div>

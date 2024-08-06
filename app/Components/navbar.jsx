@@ -90,7 +90,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end pe-2">
           <label className="flex cursor-pointer gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"

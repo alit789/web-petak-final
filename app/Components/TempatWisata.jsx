@@ -146,7 +146,7 @@ export default function TempatWisata() {
   return (
     <div className="mt-10">
       {/* Filter dropdown */}
-      <div className="mb-4 text-end">
+      <div className="mb-4 text-end rv1">
         <label htmlFor="typeFilter" className="mr-2">
           Filter by Type :
         </label>
@@ -177,7 +177,7 @@ export default function TempatWisata() {
           </thead>
           <tbody>
             {currentData.map((row, index) => (
-              <tr key={index} className="rv2">
+              <tr key={index} className="rv1">
                 <td>
                   <div className="flex items-center gap-3">
                     <div>
