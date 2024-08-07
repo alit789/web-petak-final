@@ -56,26 +56,28 @@ export default function Home() {
               </p>
             </div>
             <div className="rv1">
-              <button className="btn btn-primary mt-3">
-                Lets Explore{" "}
-                <span style={{ marginTop: "2px" }}>
-                  <svg
-                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </span>
-              </button>
+              <a href="#Galery" className=" scroll-smooth">
+                <button className="btn btn-primary mt-3">
+                  Lets Explore{" "}
+                  <span style={{ marginTop: "2px" }}>
+                    <svg
+                      className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </a>
             </div>
           </div>
           {/* hero Tagline */}
@@ -105,7 +107,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="galery py-10 md:py-20">
+      <section id="Galery" className="py-10 md:py-20">
         <div className="container mx-auto px-5">
           <div className="text-center mb-3 md:mb-5">
             <div className="rv1">

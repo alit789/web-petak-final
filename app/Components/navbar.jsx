@@ -47,7 +47,7 @@ export default function Navbar() {
               className="menu menu-sm dropdown-content bg-gray-900 text-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a>Our Destination</a>
@@ -70,7 +70,7 @@ export default function Navbar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu text-white menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <details>
