@@ -36,7 +36,7 @@ const images = {
     RiceField3,
   ],
   "Gunung Mertha": [GunungMertha1, GunungMertha2, GunungMertha3 , GunungMertha4 ,GunungMertha5, GunungMertha6 ,GunungMertha7],
-  "Toya Slaka": [RiceField,RiceField2,RiceField3],
+  "Rice Field": [RiceField,RiceField2,RiceField3],
   "Pesiraman Dalem": [],
 };
 

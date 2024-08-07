@@ -22,7 +22,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed z-50 w-full transition top-0 ${isScrolled ? "bg-gray-900" : "bg-transparent"}`}>
+    <nav className={`fixed z-50 w-full transition top-0 ${isScrolled ? "navColor" : "bg-transparent"}`}>
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -61,7 +61,7 @@ export default function Navbar() {
                 </ul>
               </li>
               <li>
-                <a>About Us</a>
+                <a href="/AboutUs">About Us</a>
               </li>
             </ul>
           </div>
@@ -86,7 +86,7 @@ export default function Navbar() {
               </details>
             </li>
             <li>
-              <a>About Us</a>
+              <a href="/AboutUs">About Us</a>
             </li>
           </ul>
         </div>
