@@ -71,12 +71,12 @@ export default function Kritik() {
       <div className="p-6 shadow-sm border border-gray-500 w-full h-auto rounded-xl">
         <form onSubmit={handleSubmit}>
           <div>
-            <h1 className="text-2xl text-primary font-bold">Send Me a Question..</h1>
+            <h1 className="text-2xl text-primary font-bold">
+              Send Me a Question..
+            </h1>
             <p className="text-sm my-2 w-full md:w-2/3">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequuntur dignissimos quaerat soluta ratione esse in totam,
-              perferendis eos modi voluptatum quas debitis nam illum velit
-              repellat magni aliquam doloribus cupiditate?
+              we provide question box to help you solve and answer your question
+              so we can get closer with you
             </p>
 
             {/* nama */}

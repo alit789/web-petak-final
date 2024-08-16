@@ -11,6 +11,7 @@ table,th,tr,thead,tbody,td{
   border-style: none !important;
 }
 
+
 /* body{
   height: 300vh;
 } */
@@ -44,6 +45,10 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  #popup{
+    max-height: calc(80%);
   }
 }
 

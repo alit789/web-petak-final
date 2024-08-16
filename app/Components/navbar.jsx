@@ -65,7 +65,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl text-white">PetakMlali</a>
+          <a className="btn btn-ghost text-xl text-white">se-PetakAlam</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu text-white menu-horizontal px-1">
@@ -76,10 +76,10 @@ export default function Navbar() {
               <details>
                 <summary>Our Destination</summary>
                 <ul className="p-2">
-                  <li>
+                  <li className="text-primary">
                     <a href="/GunungMertha">Gunung Mertha</a>
                   </li>
-                  <li>
+                  <li className="text-primary">
                     <a>Submenu 2</a>
                   </li>
                 </ul>

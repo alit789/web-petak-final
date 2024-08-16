@@ -38,21 +38,15 @@ export default function Home() {
           <div className="desc text-center">
             <div className="rv1">
               <h1 className=" text-4xl lg:text-6xl text-white font-semibold lg:font-bold">
-                Travel, enjoy and live a new and full life
+                Finding your new journey with nature
               </h1>
             </div>
             <div className="lg:flex rv1 justify-center items-center my-3">
               <p className=" block lg:hidden text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                hic ea eaque? Quod, incidunt qui quis facilis.
+                Get memorable experiences and enjoy the natural beauty of Petak.
               </p>
               <p className=" w-2/3 hidden lg:block text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-                minima blanditiis quod vero architecto ex iure hic ratione ullam{" "}
-                rerum incidunt ea accusamus harum laborum, doloremque minus
-                tenetur id possimus? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Obcaecati aut esse ipsam quidem iste quisquam
-                neque temporibus fugiat est?
+                Get memorable experiences and enjoy the natural beauty of Petak.
               </p>
             </div>
             <div className="rv1">
@@ -94,13 +88,12 @@ export default function Home() {
           </div>
           <div className="flex justify-center rv1">
             <p className="mt-3 hidden md:block lg:w-2/3 text-center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Consectetur, dolore illum ratione est soluta eos sapiente ut
-              necessitatibus, molestias dolor ea voluptatum consequuntur rerum
-              iure atque quia nisi in ab!
+              Find your best attraction based on your preferences and create
+              your own itinerary
             </p>
             <p className="mt-3 rv1 md:hidden text-center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Find your best attraction based on your preferences and create
+              your own itinerary
             </p>
           </div>
           <TempatWisata />
@@ -117,13 +110,12 @@ export default function Home() {
             </div>
             <div className="flex rv1 justify-center">
               <p className="mt-3 lg:w-2/3 hidden md:block">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Consectetur, dolore illum ratione est soluta eos sapiente ut
-                necessitatibus, molestias dolor ea voluptatum consequuntur rerum
-                iure atque quia nisi in ab!
+                some inspiration for you to create your imaginary about our
+                places
               </p>
               <p className="mt-3 md:hidden">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                some inspiration for you to create your imaginary about our
+                places
               </p>
             </div>
           </div>
