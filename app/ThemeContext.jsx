@@ -14,7 +14,7 @@ export const ThemeProvider = ({ children }) => {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'night' ? 'fantasy' : 'night'));
+    setTheme(prevTheme => (prevTheme === 'night' ? 'winter' : 'night'));
   };
 
   return (

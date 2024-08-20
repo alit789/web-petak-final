@@ -13,10 +13,10 @@ export default function AboutUs() {
             <h1 className=" text-2xl">Our Team</h1>
             <div className="flex justify-center">
               <p className="mt-3 md:w-2/3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                culpa veritatis ad! Deleniti odio quam impedit, quae saepe ut,
-                dolorum molestiae obcaecati neque consectetur et reiciendis quis
-                ad repellat iste?
+                This website was made by Udayana University students who have
+                community service in Petak Village in 2024. This website has the
+                purpose of supporting the nature destination located in Petak,
+                Gianyar.
               </p>
             </div>
           </div>

@@ -7,24 +7,27 @@
   font-family: "Poppins", sans-serif;
 }
 
-table,th,tr,thead,tbody,td{
+table,
+th,
+tr,
+thead,
+tbody,
+td {
   border-style: none !important;
 }
-
 
 /* body{
   height: 300vh;
 } */
 
-
 /* Customize the scrollbar for Firefox */
 * {
-  scrollbar-width:none; /* Width of the scrollbar */
+  scrollbar-width: none; /* Width of the scrollbar */
   scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar thumb and track */
 }
 
-.navColor{
-  background-color: #0F172A;
+.navColor {
+  background-color: #0f172a;
 }
 
 /* Customize the scrollbar for Internet Explorer and Edge */
@@ -32,30 +35,30 @@ body {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-.Hero{
-  background-image: url(./Img/bgHero.png); 
+.Hero {
+  background-image: url(./Img/bgHero.png);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width:476px) {
-  .Hero{
+@media screen and (max-width: 476px) {
+  .Hero {
     background-image: url(./Img/bgHeroPhone.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  #popup{
+  #popup {
     max-height: calc(80%);
   }
 }
 
-#imgDest{
+#imgDest {
   transition: 0.5s;
 }
 
-#imgDest:hover{
+#imgDest:hover {
   transform: scale(1.1);
 }

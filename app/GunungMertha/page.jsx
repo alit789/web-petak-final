@@ -21,6 +21,10 @@ export default function Page() {
     setPopupVisible(!isPopupVisible);
   };
 
+  const handleClosePopup = () => {
+    setPopupVisible(false);
+  };
+
   const [mainImage, setMainImage] = useState(GunungMertha5);
 
   const handleThumbnailClick = (image) => {
@@ -90,175 +94,32 @@ export default function Page() {
 
             <h2 className="text-xl font-semibold mt-5">The Story : </h2>
             <p className=" text-justify mt-2">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A at
-              reprehenderit non nam maxime, molestias dignissimos earum totam,
-              dolorum et tenetur labore perspiciatis quas odit, hic vitae
-              voluptates nisi aspernatur Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Sunt perspiciatis inventore error dolor!
-              Perferendis dolor reiciendis suscipit. Itaque, veniam quis? Culpa
-              magnam optio tenetur porro, voluptas inventore corrupti fugit
-              debitis.
-            </p>
-
-            <p className="mt-3 text-justify">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-              reprehenderit alias itaque dicta cupiditate sed ipsa? Nemo nisi
-              laboriosam corrupti aut, quisquam explicabo deleniti nesciunt
-              laborum, dolores dolorum molestias vero?Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Repellendus quo sed quia tempore,
-              quidem exercitationem cumque iste itaque, asperiores, inventore
-              voluptatem. Repellendus maiores harum officiis nobis delectus vel
-              aut reprehenderit.....
+              <span className=" font-bold">Tirtha Gunung Mertha</span> is a
+              remarkable destination that offers an extraordinary blend of
+              nature, spirituality, and tradition, all within a single, serene
+              location. As you explore this sacred place, you can indulge in the
+              pure and revitalizing spring water that flows directly from the
+              mountain, providing a unique connection to the earth’s natural
+              bounty. Beyond simply experiencing the tranquility of the
+              environment, you can embark on thrilling trekking journeys that
+              wind through lush landscapes, allowing you to fully immerse
+              yourself in the breathtaking beauty and spiritual richness of the
+              area. This is a place where every element, from the soothing
+              waters to the ancient traditions, comes together to offer a truly
+              unparalleled experience of harmony and peace.
             </p>
 
             <button className="btn btn-primary mt-3" onClick={togglePopup}>
-              Baca Lebih Lanjut...
+              Watch Vidio
             </button>
           </div>
         </div>
 
         <Popup
           isVisible={isPopupVisible}
-          onClose={togglePopup}
-          title="Gunung Mertha - Detailed Story"
-          content={
-            <>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A at
-                reprehenderit non nam maxime, molestias dignissimos earum totam,
-                dolorum et tenetur labore perspiciatis quas odit, hic vitae
-                voluptates nisi aspernatur. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Voluptate, ab nobis, possimus
-                ratione neque eaque voluptatum unde recusandae id minus
-                similique nesciunt illum tempora aliquam voluptas necessitatibus
-                enim magnam accusamus?
-              </p>
-
-              <p className="mt-3">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit alias itaque dicta cupiditate sed ipsa?
-                Nemo nisi laboriosam corrupti aut, quisquam explicabo deleniti
-                nesciunt laborum, dolores dolorum molestias vero?
-              </p>
-            </>
-          }
+          onClose={handleClosePopup}
+          title="Pura Gunung Mertha"
+          content="https://www.youtube.com/embed/O3WCkYeNKNg?si=LYi57vu5Byyd9Cdf"
         />
 
         <section className="timeline mt-20">

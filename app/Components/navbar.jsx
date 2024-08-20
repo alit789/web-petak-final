@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useTheme } from "../ThemeContext"; // Adjust the import path as needed
+import { useTheme } from "../ThemeContext";
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
@@ -7,7 +7,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 100) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -55,9 +55,7 @@ export default function Navbar() {
                   <li>
                     <a href="/GunungMertha">Gunung Mertha</a>
                   </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
+                  {/* New Navbar */}
                 </ul>
               </li>
               <li>
@@ -79,9 +77,7 @@ export default function Navbar() {
                   <li className="text-primary">
                     <a href="/GunungMertha">Gunung Mertha</a>
                   </li>
-                  <li className="text-primary">
-                    <a>Submenu 2</a>
-                  </li>
+                  {/* new Navbar */}
                 </ul>
               </details>
             </li>
