@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Components/navbar";
 import Timeline from "../Components/timeline";
 import Image from "next/image";
@@ -12,7 +12,6 @@ import GunungMertha3 from "@/public/XHMN3840.jpg";
 import GunungMertha4 from "@/public/XHMN3863.jpg";
 import GunungMertha5 from "@/public/XHMN3878.jpg";
 import GunungMertha6 from "@/public/XHMN3928.jpg";
-import GunungMertha7 from "@/public/XHMN3947.jpg";
 
 export default function Page() {
   const [isPopupVisible, setPopupVisible] = useState(false);
@@ -31,12 +30,26 @@ export default function Page() {
     setMainImage(image);
   };
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const ScrollReveal = require("scrollreveal").default;
+
+      ScrollReveal().reveal(".rv1", {
+        origin: "bottom",
+        distance: "20px",
+        duration: 2000,
+        delay: 100,
+        reset: true,
+      });
+    }
+  }, []);
+
   return (
     <main className="h-auto">
       <Navbar />
       <div className="container mx-auto px-5 py-24 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="left">
+          <div className="left rv1">
             <div className="ImageGunungMertha">
               <div className="grid gap-4">
                 <div>
@@ -86,9 +99,9 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="right mt-5 lg:mt-0 lg:ps-10">
+          <div className="right mt-5 lg:mt-0 lg:ps-10 rv1">
             <h2 className="text-3xl font-bold">Gunung Mertha</h2>
-            <p className="badge badge-lg mt-3 badge-primary">
+            <p className="badge badge-lg mt-4 badge-primary">
               Objek Pariwisata
             </p>
 
@@ -109,7 +122,7 @@ export default function Page() {
               unparalleled experience of harmony and peace.
             </p>
 
-            <button className="btn btn-primary mt-3" onClick={togglePopup}>
+            <button className="btn btn-primary mt-5" onClick={togglePopup}>
               Watch Vidio
             </button>
           </div>
@@ -122,16 +135,13 @@ export default function Page() {
           content="https://www.youtube.com/embed/O3WCkYeNKNg?si=LYi57vu5Byyd9Cdf"
         />
 
-        <section className="timeline mt-20">
+        <section className="timeline mt-20 rv1">
           <ol className="relative border-s border-primary">
             {/* new line */}
             <li className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-primary"></div>
-              <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
-                Januari 2018
-              </time>
               <h3 className="text-lg font-semibold text-primary ">
-                Lorem ipsum dolor sit
+                Pura Gunung Mertha
               </h3>
               <p className="mb-4 text-base font-normal text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
@@ -144,11 +154,8 @@ export default function Page() {
             {/* new line */}
             <li className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-primary"></div>
-              <time className="mb-1 text-sm font-normal leading-none text-gray-400">
-                March 2022
-              </time>
               <h3 className="text-lg font-semibold text-primary ">
-                Lorem ipsum dolor sit
+                Pasiraman Gunung Mertha
               </h3>
               <p className="text-base font-normal text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -165,11 +172,8 @@ export default function Page() {
             {/* new line */}
             <li className="ms-4">
               <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-primary"></div>
-              <time className="mb-1 text-sm font-normal leading-none text-gray-400">
-                April 2022
-              </time>
               <h3 className="text-lg font-semibold text-primary ">
-                Lorem ipsum dolor sit
+                Jalur Tracking
               </h3>
               <p className="text-base font-normal text-gray-500">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
