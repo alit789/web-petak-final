@@ -13,15 +13,15 @@ export default function TempatWisata() {
   const data = [
     {
       name: "Pasiraman Gunung Mertha",
-      address:
-        "Jalan Pura, Gunung Mertha, Kec. Gianyar, Kabupaten Gianyar, Bali.",
+      address:"Br. Madangan Kaja, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
       type: "Objek Wisata",
-      gmaps: "https://g.co/kgs/HkYc2en",
+      gmaps: "https://maps.app.goo.gl/R1s6YwvHRK13UgY49",
     },
     {
       name: "Toya Slaka",
-      address: "Jl. Raya Suwat, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
-      type: "Penginapan",
+      address:"Jl. Raya Suwat, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
+      type: "Objek Wisata",
+      gmaps: "https://maps.app.goo.gl/kjv4iqq2a5dq2M3J7",
     },
     // tambah data
   ];
@@ -120,7 +120,7 @@ export default function TempatWisata() {
                 </td>
                 <th>
                   <a href={row.gmaps}>
-                    <button className="btn btn-ghost btn-sm">details</button>
+                    <button className="btn btn-ghost btn-sm">Maps</button>
                   </a>
                 </th>
               </tr>

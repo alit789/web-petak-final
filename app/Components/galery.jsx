@@ -5,6 +5,11 @@ import React, { useState } from "react";
 
 // Upload photos
 
+// Random Photos
+import RiceField from "@/public/XHMN3746.jpg";
+import RiceField2 from "@/public/XHMN3738.jpg";
+import RiceField3 from "@/public/XHMN3756.jpg";
+
 // Gunung Mertha
 import GunungMertha1 from "@/public/XHMN3814.jpg";
 import GunungMertha2 from "@/public/XHMN3833.jpg";
@@ -13,14 +18,16 @@ import GunungMertha4 from "@/public/XHMN3863.jpg";
 import GunungMertha5 from "@/public/XHMN3878.jpg";
 import GunungMertha6 from "@/public/XHMN3928.jpg";
 import GunungMertha7 from "@/public/XHMN3947.jpg";
+import GunungMertha8 from "@/public/XHMN3987.jpg";
+import GunungMertha9 from "@/public/XHMN4061.jpg";
+import GunungMertha10 from "@/public/XHMN4063.jpg";
+import GunungMertha11 from "@/public/XHMN4067.jpg";
+import GunungMertha12 from "@/public/XHMN4145.jpg";
+import GunungMertha13 from "@/public/XHMN4151.jpg";
+import GunungMertha14 from "@/public/XHMN4163.jpg";
 
 
-
-// ricefield
-import RiceField from "@/public/XHMN3746.jpg"
-import RiceField2 from "@/public/XHMN3738.jpg"
-import RiceField3 from "@/public/XHMN3756.jpg"
-
+// Toya Slaka
 
 const images = {
   "All categories": [
@@ -31,12 +38,34 @@ const images = {
     GunungMertha5,
     GunungMertha6,
     GunungMertha7,
+    GunungMertha8,
+    GunungMertha9,
+    GunungMertha10,
+    GunungMertha11,
+    GunungMertha12,
+    GunungMertha13,
+    GunungMertha14,
     RiceField,
     RiceField2,
     RiceField3,
   ],
-  "Gunung Mertha": [GunungMertha1, GunungMertha2, GunungMertha3 , GunungMertha4 ,GunungMertha5, GunungMertha6 ,GunungMertha7],
-  "Toya Slaka": [RiceField,RiceField2,RiceField3],
+  "Gunung Mertha": [
+    GunungMertha1,
+    GunungMertha2,
+    GunungMertha3,
+    GunungMertha4,
+    GunungMertha5,
+    GunungMertha6,
+    GunungMertha7,
+    GunungMertha8,
+    GunungMertha9,
+    GunungMertha10,
+    GunungMertha11,
+    GunungMertha12,
+    GunungMertha13,
+    GunungMertha14,
+  ],
+  "Toya Slaka": [],
   "Pesiraman Dalem": [],
 };
 
@@ -64,7 +93,9 @@ export default function Galery() {
             key={category}
             type="button"
             className={`text-gray-900 hover:bg-primary focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base hover:text-white font-medium px-5 py-2.5 text-center me-3 mb-3 ${
-              selectedCategory === category ? " bg-primary text-white" : "bg-white"
+              selectedCategory === category
+                ? " bg-primary text-white"
+                : "bg-white"
             }`}
             onClick={() => handleButtonClick(category)}
           >
@@ -79,15 +110,35 @@ export default function Galery() {
           data-dropdown-toggle="dropdown"
           className="btn btn-primary w-full"
           type="button"
-          onClick={() => document.getElementById("dropdown").classList.toggle("hidden")}
+          onClick={() =>
+            document.getElementById("dropdown").classList.toggle("hidden")
+          }
         >
           {selectedCategory}
-          <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
+          <svg
+            className="w-2.5 h-2.5 ms-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m1 1 4 4 4-4"
+            />
           </svg>
         </button>
-        <div id="dropdown" className="z-10 mt-3 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-full ">
-          <ul className="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+        <div
+          id="dropdown"
+          className="z-10 mt-3 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-full "
+        >
+          <ul
+            className="py-2 text-sm text-gray-700"
+            aria-labelledby="dropdownDefaultButton"
+          >
             {Object.keys(images).map((category) => (
               <li key={category}>
                 <div
