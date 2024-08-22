@@ -131,7 +131,7 @@ export default function Page() {
         <Popup
           isVisible={isPopupVisible}
           onClose={handleClosePopup}
-          title="Pura Gunung Mertha"
+          title="Vidio Dokumentasi Gunung Mertha"
           content="https://www.youtube.com/embed/O3WCkYeNKNg?si=LYi57vu5Byyd9Cdf"
         />
 
@@ -144,10 +144,13 @@ export default function Page() {
                 Pura Gunung Mertha
               </h3>
               <p className="mb-4 text-base font-normal text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                ratione, deleniti laboriosam facere asperiores culpa sed, fuga
-                enim cupiditate, ducimus unde perspiciatis praesentium debitis
-                obcaecati? Adipisci mollitia natus doloremque ratione?
+                Pura gunung merta memiliki perjalanan yang sangat unik dalam
+                sejarah perkembangannya menurut cerita turun temurun dari tetua
+                adat setempat pura gunung merta dulunya merupakan sebuah pura
+                dalem, selain keunikan tersebut pura gunung merta juga memiliki
+                kontur yang unik di bagian tri mandalanya yang biasanya semakin
+                mendekat ke utama mandala kontur pura semakin naik namun di pura
+                gunung merta semakin menurun.
               </p>
             </li>
 
@@ -158,14 +161,13 @@ export default function Page() {
                 Pasiraman Gunung Mertha
               </h3>
               <p className="text-base font-normal text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti architecto, velit ipsum voluptatum molestias aspernatur
-                in earum iusto consequatur maiores nobis magnam quo repudiandae
-                vitae reiciendis mollitia ipsam obcaecati reprehenderit. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Numquam esse
-                tenetur cum itaque quam amet, quas vero aliquam id nemo
-                consectetur nihil quod reprehenderit repudiandae quae atque
-                voluptatum odit. Obcaecati!
+                Salah satu daya tarik di kawasan pura gunung merta terdapat beji
+                dengan nama pesiraman tirta gunung merta yang terletak di bawah
+                pura gunung merta. Biasanya masyarakat melaksanakan kegiatan
+                melukat untuk memohon keselamatan dan kesembuhan. Masyarakat
+                juga memanfaatkan air dari pesiraman tirta gunung merta sebagai
+                sumber air pdam swadaya untuk memenuhi kebutuhan air bersih
+                masyarakat sekitar
               </p>
             </li>
 
@@ -176,13 +178,11 @@ export default function Page() {
                 Jalur Tracking
               </h3>
               <p className="text-base font-normal text-gray-500">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-                vel omnis facilis amet, quisquam quaerat dignissimos pariatur
-                rerum magnam veritatis fugiat ipsum sed quod. Facere illum
-                facilis dicta eaque odio. Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Aut vero neque, ipsam, voluptatum
-                quod quas modi repudiandae veniam tenetur laboriosam nostrum
-                quisquam optio? At ut ea laudantium tenetur iure quisquam!
+                Selain pura dan beji di kawasan pura gunung merta terdapat jalur
+                tracking yang terintegrasi dengan puri saron. Jalur tracking ini
+                dikelola oleh pokdarwis desa secara swadaya. Jalur tracking ini
+                memiliki banyak spot menarik seperti air terjun, sumber air,
+                hiden canyon, dan ujan grigis.
               </p>
             </li>
           </ol>
