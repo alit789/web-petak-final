@@ -7,7 +7,7 @@ export default function Popup({ isVisible, onClose, title, content }) {
 
   return (
     <div className="fixed inset-0 bg-gray-800 bg-opacity-90 flex justify-center items-center z-50">
-      <div className="relative w-11/12 lg:w-3/4 h-5/6 lg:h-3/4 p-6 rounded-lg shadow-lg flex flex-col justify-center items-center">
+      <div className="relative w-11/12 lg:w-3/4 h-5/6 lg:h-3/4 p-6 rounded-lg flex flex-col justify-center items-center">
         <button
           onClick={onClose}
           className="absolute top-6 right-6 text-gray-600 hover:text-gray-800"

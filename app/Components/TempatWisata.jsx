@@ -68,10 +68,8 @@ export default function TempatWisata() {
           onChange={(e) => setFilter(e.target.value)}
         >
           <option value="All">All</option>
-          <option value="Objek Wisata">Objek Wisata</option>
-          <option value="Penginapan">Penginapan</option>
-          <option value="Kuliner">Kuliner</option>
-          <option value="Merchandise">Merchandise</option>
+          <option value="Objek Wisata">Tourist Attraction</option>
+          <option value="Penginapan">Homestay</option>
         </select>
       </div>
 

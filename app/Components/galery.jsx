@@ -66,7 +66,7 @@ const images = {
     GunungMertha14,
   ],
   "Toya Slaka": [],
-  "Pesiraman Dalem": [],
+  // "Pesiraman Dalem": [],
 };
 
 export default function Galery() {

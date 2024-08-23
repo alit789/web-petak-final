@@ -26,20 +26,6 @@ export default function Home() {
 
   const { theme } = useTheme();
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const ScrollReveal = require("scrollreveal").default;
-
-      ScrollReveal().reveal(".rv1", {
-        origin: "bottom",
-        distance: "20px",
-        duration: 2000,
-        delay: 100,
-        reset: true,
-      });
-    }
-  }, []);
-
   return (
     <main className="w-full overflow-hidden" data-theme={theme}>
       {/* Navbar */}

@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Navbar from "../Components/navbar";
-import Timeline from "../Components/timeline";
 import Image from "next/image";
 import Popup from "../Components/popupDesc"; // Import the Popup component
 
@@ -29,20 +28,6 @@ export default function Page() {
   const handleThumbnailClick = (image) => {
     setMainImage(image);
   };
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const ScrollReveal = require("scrollreveal").default;
-
-      ScrollReveal().reveal(".rv1", {
-        origin: "bottom",
-        distance: "20px",
-        duration: 2000,
-        delay: 100,
-        reset: true,
-      });
-    }
-  }, []);
 
   return (
     <main className="h-auto">
@@ -123,7 +108,7 @@ export default function Page() {
             </p>
 
             <button className="btn btn-primary mt-5" onClick={togglePopup}>
-              Watch Vidio
+              Watch Video
             </button>
           </div>
         </div>
@@ -144,13 +129,14 @@ export default function Page() {
                 Pura Gunung Mertha
               </h3>
               <p className="mb-4 text-base font-normal text-gray-500">
-                Pura gunung merta memiliki perjalanan yang sangat unik dalam
-                sejarah perkembangannya menurut cerita turun temurun dari tetua
-                adat setempat pura gunung merta dulunya merupakan sebuah pura
-                dalem, selain keunikan tersebut pura gunung merta juga memiliki
-                kontur yang unik di bagian tri mandalanya yang biasanya semakin
-                mendekat ke utama mandala kontur pura semakin naik namun di pura
-                gunung merta semakin menurun.
+                Gunung temple immediately has a very unique journey inside The
+                history of its development is based on stories handed down from
+                elders According to local custom, the Mount Merta Temple was
+                once a temple Dalem, apart from this uniqueness, the Gunung
+                Temple also has its own Unique contours in the tri mandala
+                section which usually increases As you get closer to the main
+                mandala, the contour of the temple rises, but in the temple the
+                mountain immediately began to decline.
               </p>
             </li>
 
@@ -161,13 +147,13 @@ export default function Page() {
                 Pasiraman Gunung Mertha
               </h3>
               <p className="text-base font-normal text-gray-500">
-                Salah satu daya tarik di kawasan pura gunung merta terdapat beji
-                dengan nama pesiraman tirta gunung merta yang terletak di bawah
-                pura gunung merta. Biasanya masyarakat melaksanakan kegiatan
-                melukat untuk memohon keselamatan dan kesembuhan. Masyarakat
-                juga memanfaatkan air dari pesiraman tirta gunung merta sebagai
-                sumber air pdam swadaya untuk memenuhi kebutuhan air bersih
-                masyarakat sekitar
+                One of the attractions in the Gunung Merta Temple area is a beji
+                with the name Pesiraman Tirta Gunung Merta which is located
+                under the Gunung Merta Temple. Usually people carry out wounding
+                activities to ask for safety and healing. The community also
+                uses water from the Tirta Gunung Merta water source as a water
+                source for PDAM Swadaya to meet the clean water needs of the
+                surrounding community.
               </p>
             </li>
 
@@ -178,11 +164,12 @@ export default function Page() {
                 Jalur Tracking
               </h3>
               <p className="text-base font-normal text-gray-500">
-                Selain pura dan beji di kawasan pura gunung merta terdapat jalur
-                tracking yang terintegrasi dengan puri saron. Jalur tracking ini
-                dikelola oleh pokdarwis desa secara swadaya. Jalur tracking ini
-                memiliki banyak spot menarik seperti air terjun, sumber air,
-                hiden canyon, dan ujan grigis.
+                Apart from the temple and Beji, in the Gunung Pura area there is
+                also a tracking route that is integrated with Puri Saron. This
+                tracking route is managed by the village pokdarwis
+                independently. This tracking route has many interesting spots
+                such as waterfalls, water sources, hidden canyons, and Grigis
+                rain.
               </p>
             </li>
           </ol>
