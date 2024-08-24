@@ -1,10 +1,20 @@
 "use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function accordion() {
   return (
     <div>
-      <div className="collapse collapse-plus border border-gray-500 mt-3">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          damping: 10,
+          delay: 0.1,
+        }}
+        className="collapse collapse-plus border border-gray-500 mt-3"
+      >
         <input type="radio" name="my-accordion-3" defaultChecked />
         <div className="collapse-title text-lg text-primary font-medium">
           1. What are the tourist attractions in Petak?
@@ -17,8 +27,17 @@ export default function accordion() {
             uniqueness and history.
           </p>
         </div>
-      </div>
-      <div className="collapse collapse-plus border border-gray-500 mt-3">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          damping: 10,
+          delay: 0.2,
+        }}
+        className="collapse collapse-plus border border-gray-500 mt-3"
+      >
         <input type="radio" name="my-accordion-3" />
         <div className="collapse-title text-lg text-primary font-medium">
           2. Is there a hotel or place to stay in Petak?
@@ -31,8 +50,17 @@ export default function accordion() {
             preserved.
           </p>
         </div>
-      </div>
-      <div className="collapse collapse-plus border border-gray-500 mt-3">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          damping: 10,
+          delay: 0.3,
+        }}
+        className="collapse collapse-plus border border-gray-500 mt-3"
+      >
         <input type="radio" name="my-accordion-3" />
         <div className="collapse-title text-lg text-primary font-medium">
           3. How much budget is needed for a vacation in Petak?
@@ -44,7 +72,7 @@ export default function accordion() {
             visit.
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

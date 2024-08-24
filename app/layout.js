@@ -4,7 +4,7 @@ import { ThemeProvider } from "./ThemeContext"; // Adjust path as needed
 export const metadata = {
   title: "sePetakAlam",
   description:
-    "Discover the joy of creating lasting memories as you explore the stunning natural landscapes of Petak, where every encounter with nature promises an experience that will captivate your heart and soul",
+    "sePetakAlam adalah sebuah website wisata dari desa petak, gianyar, bali yang bertujuan untuk membantu desa petak dalam mempromosikan objek wisata di desa petak.",
 };
 
 export default function RootLayout({ children }) {

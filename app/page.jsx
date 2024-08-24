@@ -7,6 +7,7 @@ import Accordion from "./Components/accordion";
 import Footer from "./Components/footer";
 import TempatWisata from "./Components/TempatWisata";
 import Kritik from "./Components/kritik";
+import { motion } from "framer-motion";
 
 import Popup from "./Components/popupDesc";
 
@@ -39,31 +40,64 @@ export default function Home() {
           <div className="desc text-center">
             <div className="rv1">
               {/* Headline Hero */}
-              <h1 className=" text-4xl lg:text-6xl text-white font-semibold lg:font-bold">
+              <motion.h1
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ type: "spring", damping: 10 }}
+                className=" text-4xl lg:text-6xl text-white font-semibold lg:font-bold"
+              >
                 Finding your new journey with nature
-              </h1>
+              </motion.h1>
               {/* End Headline Hero */}
             </div>
             <div className="lg:flex rv1 justify-center items-center my-3">
               {/* Desc Hero */}
               {/* Phone Desc */}
-              <p className=" block lg:hidden text-white">
+              <motion.p
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  damping: 10,
+                  delay: 0.3,
+                }}
+                className=" block lg:hidden text-white"
+              >
                 Discover the joy of creating lasting memories as you explore the
                 stunning natural landscapes of Petak.
-              </p>
+              </motion.p>
               {/* End Phone Desc */}
               {/* PC Desc */}
-              <p className=" w-2/3 text-lg hidden lg:block text-white">
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  damping: 10,
+                  delay: 0.3,
+                }}
+                className=" w-2/3 text-lg hidden lg:block text-white"
+              >
                 Discover the joy of creating lasting memories as you explore the
                 stunning natural landscapes of Petak, where every encounter with
                 nature promises an experience that will captivate your heart and
                 soul
-              </p>
+              </motion.p>
               {/* End PC Desc */}
               {/* End Desc Hero */}
             </div>
             <div className="rv1">
-              <button onClick={togglePopup} className="btn btn-primary mt-3">
+              <motion.button
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  damping: 10,
+                  delay: 0.3,
+                }}
+                onClick={togglePopup}
+                className="btn btn-primary mt-3"
+              >
                 Watch Video{" "}
                 <span style={{ marginTop: "2px" }}>
                   <svg
@@ -82,7 +116,7 @@ export default function Home() {
                     />
                   </svg>
                 </span>
-              </button>
+              </motion.button>
             </div>
           </div>
           {/* hero Tagline */}
@@ -95,7 +129,7 @@ export default function Home() {
         isVisible={isPopupVisible}
         onClose={handleClosePopup}
         title="Pura Gunung Mertha"
-        content="https://www.youtube.com/embed/O3WCkYeNKNg?si=LYi57vu5Byyd9Cdf"
+        content="https://www.youtube.com/embed/txTNazu-XIA?si=iBFpjo0lfbAb5A__"
       />
       {/* End Popup Vidio */}
 
@@ -104,24 +138,47 @@ export default function Home() {
         <div className="container mx-auto px-5">
           <div className="text-center rv1">
             {/* Tourist Title */}
-            <h1 className="text-3xl font-bold text-primary">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", damping: 10 }}
+              className="text-3xl font-bold text-primary"
+            >
               Tourist Attraction
-            </h1>
+            </motion.h1>
             {/* End Tourist Title */}
           </div>
           <div className="flex justify-center rv1">
             {/* Tourist Desc Title */}
             {/* Desc PC */}
-            <p className="mt-3 hidden md:block lg:w-2/3 text-center">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                damping: 10,
+                delay: 0.2,
+              }}
+              className="mt-3 hidden md:block lg:w-2/3 text-center"
+            >
               Find your best attraction based on your preferences and create
               your own itinerary
-            </p>
+            </motion.p>
             {/* End Desc PC */}
             {/* Desc Phone */}
-            <p className="mt-3 rv1 md:hidden text-center">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                damping: 10,
+                delay: 0.5,
+              }}
+              className="mt-3 rv1 md:hidden text-center"
+            >
               Find your best attraction based on your preferences and create
               your own itinerary
-            </p>
+            </motion.p>
             {/* End Desc Phone */}
             {/* End Tourist Desc Title */}
           </div>
@@ -136,24 +193,50 @@ export default function Home() {
           <div className="text-center mb-3 md:mb-5">
             <div className="rv1">
               {/* Trip Inspiration Title */}
-              <h1 className="text-3xl font-bold text-primary">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  damping: 10,
+                }} // Menambahkan delay 0.5 detik
+                className="text-3xl font-bold text-primary"
+              >
                 Trip Inspiration
-              </h1>
+              </motion.h1>
               {/* End Trip Inspiration Title */}
             </div>
             <div className="flex rv1 justify-center">
               {/* Trip Inspiration Desc */}
               {/* Desc PC */}
-              <p className="mt-3 lg:w-2/3 hidden md:block">
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  damping: 10,
+                  delay: 0.3,
+                }}
+                className="mt-3 lg:w-2/3 hidden md:block"
+              >
                 some inspiration for you to create your imaginary about our
                 places
-              </p>
+              </motion.p>
               {/* End Desc PC */}
               {/* Desc Phone */}
-              <p className="mt-3 md:hidden">
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  damping: 10,
+                  delay: 0.3,
+                }}
+                className="mt-3 md:hidden"
+              >
                 some inspiration for you to create your imaginary about our
                 places
-              </p>
+              </motion.p>
               {/* End Desc Phone */}
               {/* End Trip Inspiration Desc */}
             </div>
@@ -170,25 +253,51 @@ export default function Home() {
         <div className="container mx-auto px-5">
           <div className="rv1">
             {/* FAQ Title */}
-            <h1 className="text-3xl text-center font-bold text-primary">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                damping: 10,
+              }}
+              className="text-3xl text-center font-bold text-primary"
+            >
               Frequently Asked Question
-            </h1>
+            </motion.h1>
             {/* End FAQ Title */}
           </div>
           <div className="flex rv1 justify-center">
             {/* Desc FAQ */}
             {/* Desc PC */}
-            <p className="mt-3 hidden md:block text-center lg:w-2/3">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                damping: 10,
+                delay: 0.3,
+              }}
+              className="mt-3 hidden md:block text-center lg:w-2/3"
+            >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Consectetur, dolore illum ratione est soluta eos sapiente ut
               necessitatibus, molestias dolor ea voluptatum consequuntur rerum
               iure atque quia nisi in ab!
-            </p>
+            </motion.p>
             {/* End Desc PC */}
             {/* Desc Phone */}
-            <p className="mt-3 md:hidden text-center">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                damping: 10,
+                delay: 0.3,
+              }}
+              className="mt-3 md:hidden text-center"
+            >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
+            </motion.p>
             {/* End Desc Phone */}
             {/* End Desc FAQ */}
           </div>
@@ -201,9 +310,17 @@ export default function Home() {
 
       {/* Kritik */}
       <section className="py-10 md:py-20 Kritik">
-        <div className="container mx-auto px-5 rv1">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "spring",
+            damping: 10,
+          }}
+          className="container mx-auto px-5 rv1"
+        >
           <Kritik />
-        </div>
+        </motion.div>
       </section>
       {/* End Kritik */}
 

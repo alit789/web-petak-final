@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const rowsPerPage = 10; // Adjust this value to the number of rows you want per page
 
@@ -13,16 +14,18 @@ export default function TempatWisata() {
   const data = [
     {
       name: "Pasiraman Gunung Mertha",
-      address:"Br. Madangan Kaja, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
+      address:
+        "Br. Madangan Kaja, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
       type: "Objek Wisata",
       gmaps: "https://maps.app.goo.gl/R1s6YwvHRK13UgY49",
     },
     {
       name: "Toya Slaka",
-      address:"Jl. Raya Suwat, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
+      address: "Jl. Raya Suwat, Petak, Kec. Gianyar, Kabupaten Gianyar, Bali",
       type: "Objek Wisata",
       gmaps: "https://maps.app.goo.gl/kjv4iqq2a5dq2M3J7",
     },
+
     // tambah data
   ];
 
@@ -57,7 +60,16 @@ export default function TempatWisata() {
   return (
     <div className="mt-10">
       {/* Filter dropdown */}
-      <div className="mb-4 text-end rv1">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          damping: 10,
+          delay: 0.3,
+        }} // Menambahkan delay 0.5 detik
+        className="mb-4 text-end "
+      >
         <label htmlFor="typeFilter" className="mr-2">
           Filter by Type :
         </label>
@@ -71,12 +83,12 @@ export default function TempatWisata() {
           <option value="Objek Wisata">Tourist Attraction</option>
           <option value="Penginapan">Homestay</option>
         </select>
-      </div>
+      </motion.div>
 
       <div className="overflow-hidden">
         <table className="table">
           {/* head */}
-          <thead className="rv1">
+          <thead className="">
             <tr>
               <th>Place Name</th>
               <th className="hidden md:table-cell">Address</th>
@@ -86,7 +98,18 @@ export default function TempatWisata() {
           </thead>
           <tbody>
             {currentData.map((row, index) => (
-              <tr key={index} className="rv1">
+              <motion.tr
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 10,
+                  delay: index * 0.1,
+                }}
+                className=""
+              >
                 <td>
                   <div className="flex items-center gap-3">
                     <div>
@@ -121,7 +144,7 @@ export default function TempatWisata() {
                     <button className="btn btn-ghost btn-sm">Maps</button>
                   </a>
                 </th>
-              </tr>
+              </motion.tr>
             ))}
           </tbody>
         </table>

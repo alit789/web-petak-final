@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 // Upload photos
 
@@ -25,7 +26,6 @@ import GunungMertha11 from "../Img/XHMN4067.jpg";
 import GunungMertha12 from "../Img/XHMN4145.jpg";
 import GunungMertha13 from "../Img/XHMN4151.jpg";
 import GunungMertha14 from "../Img/XHMN4163.jpg";
-
 
 // Toya Slaka
 
@@ -158,15 +158,25 @@ export default function Galery() {
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {imagesToShow.map((src, index) => (
-          <div key={index}>
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: "spring",
+              damping: 10,
+              delay: index * 0.1, // Delay of 0.2s between each image
+            }}
+          >
             <Image
               className="h-auto max-w-full rounded-lg"
               src={src}
               alt={`Image ${index + 1}`}
             />
-          </div>
+          </motion.div>
         ))}
       </div>
+
       {filteredImages.length > visibleCount && (
         <div className="flex justify-center py-4 mt-5">
           <button
