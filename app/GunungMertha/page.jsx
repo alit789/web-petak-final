@@ -39,6 +39,7 @@ export default function Page() {
               <div className="grid gap-4">
                 <div>
                   <Image
+                    width={"100%"}
                     className="h-auto max-w-full rounded-lg"
                     src={mainImage}
                     alt="Main Gunung Mertha Image"
@@ -47,6 +48,7 @@ export default function Page() {
                 <div className="grid grid-cols-5 gap-4">
                   <div onClick={() => handleThumbnailClick(GunungMertha2)}>
                     <Image
+                      width={"100%"}
                       className="h-auto max-w-full rounded-lg cursor-pointer"
                       src={GunungMertha2}
                       alt="Gunung Mertha Thumbnail 2"
@@ -54,6 +56,7 @@ export default function Page() {
                   </div>
                   <div onClick={() => handleThumbnailClick(GunungMertha3)}>
                     <Image
+                      width={"100%"}
                       className="h-auto max-w-full rounded-lg cursor-pointer"
                       src={GunungMertha3}
                       alt="Gunung Mertha Thumbnail 3"
@@ -61,6 +64,7 @@ export default function Page() {
                   </div>
                   <div onClick={() => handleThumbnailClick(GunungMertha4)}>
                     <Image
+                      width={"100%"}
                       className="h-auto max-w-full rounded-lg cursor-pointer"
                       src={GunungMertha4}
                       alt="Gunung Mertha Thumbnail 4"
@@ -68,6 +72,7 @@ export default function Page() {
                   </div>
                   <div onClick={() => handleThumbnailClick(GunungMertha6)}>
                     <Image
+                      width={"100%"}
                       className="h-auto max-w-full rounded-lg cursor-pointer"
                       src={GunungMertha6}
                       alt="Gunung Mertha Thumbnail 6"
@@ -75,6 +80,7 @@ export default function Page() {
                   </div>
                   <div onClick={() => handleThumbnailClick(GunungMertha1)}>
                     <Image
+                      width={"100%"}
                       className="h-auto max-w-full rounded-lg cursor-pointer"
                       src={GunungMertha1}
                       alt="Gunung Mertha Thumbnail 1"
