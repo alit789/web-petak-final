@@ -5,12 +5,12 @@ import Image from "next/image";
 import Popup from "../Components/popupDesc"; // Import the Popup component
 
 // Gunung Mertha
-import GunungMertha1 from "@/public/XHMN3814.jpg";
-import GunungMertha2 from "@/public/XHMN3833.jpg";
-import GunungMertha3 from "@/public/XHMN3840.jpg";
-import GunungMertha4 from "@/public/XHMN3863.jpg";
-import GunungMertha5 from "@/public/XHMN3878.jpg";
-import GunungMertha6 from "@/public/XHMN3928.jpg";
+import GunungMertha1 from "../Img/XHMN3814.jpg";
+import GunungMertha2 from "../Img/XHMN3833.jpg";
+import GunungMertha3 from "../Img/XHMN3840.jpg";
+import GunungMertha4 from "../Img/XHMN3863.jpg";
+import GunungMertha5 from "../Img/XHMN3878.jpg";
+import GunungMertha6 from "../Img/XHMN3928.jpg";
 
 export default function Page() {
   const [isPopupVisible, setPopupVisible] = useState(false);

@@ -6,25 +6,25 @@ import React, { useState } from "react";
 // Upload photos
 
 // Random Photos
-import RiceField from "@/public/XHMN3746.jpg";
-import RiceField2 from "@/public/XHMN3738.jpg";
-import RiceField3 from "@/public/XHMN3756.jpg";
+import RiceField from "../Img/XHMN3738.jpg";
+import RiceField2 from "../Img/XHMN3746.jpg";
+import RiceField3 from "../Img/XHMN3756.jpg";
 
 // Gunung Mertha
-import GunungMertha1 from "@/public/XHMN3814.jpg";
-import GunungMertha2 from "@/public/XHMN3833.jpg";
-import GunungMertha3 from "@/public/XHMN3840.jpg";
-import GunungMertha4 from "@/public/XHMN3863.jpg";
-import GunungMertha5 from "@/public/XHMN3878.jpg";
-import GunungMertha6 from "@/public/XHMN3928.jpg";
-import GunungMertha7 from "@/public/XHMN3947.jpg";
-import GunungMertha8 from "@/public/XHMN3987.jpg";
-import GunungMertha9 from "@/public/XHMN4061.jpg";
-import GunungMertha10 from "@/public/XHMN4063.jpg";
-import GunungMertha11 from "@/public/XHMN4067.jpg";
-import GunungMertha12 from "@/public/XHMN4145.jpg";
-import GunungMertha13 from "@/public/XHMN4151.jpg";
-import GunungMertha14 from "@/public/XHMN4163.jpg";
+import GunungMertha1 from "../Img/XHMN3814.jpg";
+import GunungMertha2 from "../Img/XHMN3833.jpg";
+import GunungMertha3 from "../Img/XHMN3840.jpg";
+import GunungMertha4 from "../Img/XHMN3863.jpg";
+import GunungMertha5 from "../Img/XHMN3878.jpg";
+import GunungMertha6 from "../Img/XHMN3928.jpg";
+import GunungMertha7 from "../Img/XHMN3947.jpg";
+import GunungMertha8 from "../Img/XHMN3987.jpg";
+import GunungMertha9 from "../Img/XHMN4061.jpg";
+import GunungMertha10 from "../Img/XHMN4063.jpg";
+import GunungMertha11 from "../Img/XHMN4067.jpg";
+import GunungMertha12 from "../Img/XHMN4145.jpg";
+import GunungMertha13 from "../Img/XHMN4151.jpg";
+import GunungMertha14 from "../Img/XHMN4163.jpg";
 
 
 // Toya Slaka
